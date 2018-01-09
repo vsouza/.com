@@ -1,3 +1,7 @@
+* {
+	font-family: "BlinkMacSystemFont"
+}
+
 *,.before,:after {
 box-sizing:border-box;
 }
@@ -73,7 +77,7 @@ text-decoration:underline;
 }
 
 code,pre {
-font-family:Hack, sans-serif;
+font-family: BlinkMacSystemFont;
 }
 
 pre {
