@@ -1,185 +1,84 @@
-*,.before,:after {
-box-sizing:border-box;
-}
-
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,main,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
-box-sizing:border-box;
-border:0;
-outline:0;
-font-size:100%;
-font-weight:inherit;
-font-style:inherit;
-font-family:inherit;
-vertical-align:baseline;
-margin:0;
-padding:0;
-}
-
-article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
-display:block;
-}
-
 * {
--webkit-tap-highlight-color:transparent;
--webkit-text-size-adjust:100%;
--ms-text-size-adjust:100%;
--webkit-font-smoothing:subpixel-antialiased;
+    background-color: #F0EBD8;
+    color: #1D2D44;
+    font-family: 'Kalnia', serif;
 }
 
-a {
-text-decoration:none;
-transition:color 200ms;
+#content {
+    position: relative;
+    top: 1%;
+    left: 0%;
+    width: auto;
+    height: 100%;
+    min-height: 600px;
 }
 
-ol,ul {
-list-style-type:none;
+.naked-code {
+    font-size: 18px;
+    color: rgb(62, 92, 118, 0.3);
 }
 
-table {
-border-collapse:collapse;
-border-spacing:0;
+.first-level-identation {
+    margin-left: 25px;
+    width: auto;
+
 }
 
-caption,td,th {
-text-align:left;
-font-weight:400;
+.second-level-identation {
+    margin-left: 50px;
+    width: auto;
+
 }
 
-input,textarea {
--webkit-border-radius:0;
--moz-border-radius:0;
-}
+.third-level-identation {
+    margin-left: 75px;
+    width: auto;
 
-button,input[type=button] {
-background:0;
-}
-
-:required {
--o-box-shadow:none;
--ms-box-shadow:none;
-box-shadow:none;
-}
-
-em,i {
-font-style:italic;
-}
-
-b,strong {
-font-weight:700;
-}
-
-u {
-text-decoration:underline;
-}
-
-code,pre {
-font-family:Hack, sans-serif;
-}
-
-pre {
-white-space:pre-line;
-word-wrap:break-word;
-}
-
-blockquote:after,blockquote:before,q:after,q:before {
-content:"";
-}
-
-a,button,input[type=button],input[type=submit],label[for] {
-cursor:pointer;
-}
-
-img {
--ms-interpolation-mode:bicubic;
-}
-
-.c:after,.c:before {
-content:" ";
-display:table;
-}
-
-.c:after {
-clear:both;
 }
 
 h1 {
-color:#eee;
-line-height: 20px;
+    font-size: 9.5em;
+    font-weight: 500;
+    line-height: 0px;
 }
 
-a,h2,p {
-display:inline;
-color:#d0d0d0;
+h2 {
+    font-size: 6em;
+    line-height: 0px;
 }
-a{
-    color: #ea002a;
+
+h3 {
+    font-size: 2.7em;
+    font-weight: 500;
+    line-height: 0px;
 }
+
+p {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 32px;
+    vertical-align: baseline;
+    margin:10px;
+}
+button {
+    margin: 5px;
+    width: auto !important;
+    background-color: rgb(29, 45, 68);
+    color: rgb(240, 235, 216);
+    font-size: 18px;
+    border-radius: 25px;
+    padding: 20px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: underline;
+    color: #1D2D44;
+}
+
 a:hover {
-color:#ea002a;
-}
-
-body {
-background:#31343c;
-font-family:"Lato", sans-serif;
-font-size:20pt;
-font-weight: 300;
-line-height:30pt;
-color:#eee;
-text-rendering:geometricPrecision;
-padding:5vw;
-}
-
-main {
-display:inline-block;
-}
-
-a,h1,h2,p {
-white-space:pre;
-}
-
-::-moz-selection,::selection {
-color:#fff;
-background-color:#ea002a;
-}
-
-@media max-width700px{
-body {
-padding:75px;
-}
-}
-
-@media max-width550px{
-body {
-font-size:12px;
-line-height:18px;
-padding:30px 25px 75px;
-}
-}
-h2{
-    font-size:21pt;
-}
-
-h1{
-    font-size:25pt;
-}
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+    font-style: italic;
 }
