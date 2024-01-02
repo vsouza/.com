@@ -1,73 +1,58 @@
+/* Estilos base para dispositivos móveis (iPhone 11 e equivalentes) */
+
 * {
     background-color: #F0EBD8;
     color: #1D2D44;
     font-family: 'Kalnia', serif;
 }
 
-#content {
-    position: relative;
-    top: 1%;
-    left: 0%;
-    width: auto;
-    height: 100%;
-    min-height: 600px;
+/* Ajuste geral da fonte para dispositivos móveis */
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 13px;
+    line-height: 24px;
+    margin: 5px;
 }
 
 .naked-code {
-    font-size: 18px;
+    font-size: 14px;
     color: rgb(62, 92, 118, 0.3);
 }
 
 .first-level-identation {
-    margin-left: 25px;
+    margin-left: 10px;
     width: auto;
-
 }
 
 .second-level-identation {
-    margin-left: 50px;
+    margin-left: 30px;
     width: auto;
-
 }
 
 .third-level-identation {
-    margin-left: 75px;
+    margin-left: 50px;
     width: auto;
-
 }
 
-h1 {
-    font-size: 9.5em;
-    font-weight: 500;
-    line-height: 0px;
-}
-
-h2 {
-    font-size: 6em;
-    line-height: 0px;
-}
-
-h3 {
-    font-size: 2.7em;
-    font-weight: 500;
-    line-height: 0px;
-}
-
-p {
-    font-weight: 300;
-    font-size: 28px;
-    line-height: 32px;
-    vertical-align: baseline;
-    margin:10px;
-}
 button {
     margin: 5px;
     width: auto !important;
     background-color: rgb(29, 45, 68);
     color: rgb(240, 235, 216);
-    font-size: 18px;
+    font-size: 12px;
     border-radius: 25px;
-    padding: 20px;
+    padding: 10px;
     border: none;
     text-align: center;
     text-decoration: none;
@@ -81,4 +66,73 @@ a {
 
 a:hover {
     font-style: italic;
+}
+
+/* Media query para dispositivos maiores (ajuste a partir do iPhone 11 em diante, conforme necessário) */
+@media screen and (min-width: 440px) { /* iPhone 11 width */
+    .naked-code {
+        font-size: 18px;
+        color: rgb(62, 92, 118, 0.3);
+    }
+    /* Ajuste da fonte para dispositivos maiores */
+    h1 {
+        font-size: 9.5em;
+        font-weight: 500;
+        line-height: 0px;
+    }
+    
+    h2 {
+        font-size: 6em;
+        line-height: 0px;
+    }
+    
+    h3 {
+        font-size: 2.7em;
+        font-weight: 500;
+        line-height: 0px;
+    }
+    
+    p {
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 32px;
+        vertical-align: baseline;
+        margin:10px;
+    }
+
+    /* Ajuste da identação para dispositivos maiores */
+    .first-level-identation {
+        margin-left: 15px;
+    }
+
+    .second-level-identation {
+        margin-left: 30px;
+    }
+
+    .third-level-identation {
+        margin-left: 45px;
+    }
+
+    button {
+        margin: 5px;
+        width: auto !important;
+        background-color: rgb(29, 45, 68);
+        color: rgb(240, 235, 216);
+        font-size: 18px;
+        border-radius: 25px;
+        padding: 20px;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    a {
+        text-decoration: underline;
+        color: #1D2D44;
+    }
+    
+    a:hover {
+        font-style: italic;
+    }
 }
